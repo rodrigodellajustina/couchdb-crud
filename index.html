@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Della Exemplo CRUD CouchDB</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>CRUD Aluno</h2>
+        </div>
+      </div>
+
+      <div class="row">	  
+          <div class="panel panel-primary">
+            <div class="panel-heading">Dados dos Alunos</div>
+            <div class="panel-body">
+              <form id="formulario_principal">
+                <div class="form-group">
+                  <label for="title">Nome</label>
+                  <input type="text" name="nome" id="aluno_nome" class="form-control input-lg" placeholder="Nome">
+                </div>
+
+                <div class="form-group">
+                  <label for="author">Sobrenome</label>
+                  <input type="text" name="sobrenome" id="aluno_sobrenome" class="form-control input-lg" placeholder="Sobrenome">
+                </div>
+
+                <div class="form-group">
+                  <label for="publisher">Cidade</label>
+                  <input type="text" name="cidade" id="aluno_cidade" class="form-control input-lg" placeholder="Cidade">
+                </div>
+
+                <div class="form-group">
+                  <label for="publisher">Nascimento</label>
+                  <input type="date" name="nascimento" id="aluno_nascimento" class="form-control input-lg">
+                </div>
+
+                <div class="form-group">
+                  <button type="button" id="btncadastrar" onclick="AlunoInserir();" class="btn btn-lg btn-primary">
+                    Cadastrar
+                  </button>
+                  <button type="button" id="btnBuscar" onclick="AlunoBuscar();" class="btn btn-lg btn-primary">
+                    Buscar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/couch.js"></script>
+  </body>
+</html>
